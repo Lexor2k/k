@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lexor2k | Mongolian Streamer</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    color:white;
+    overflow-x:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 80px;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    color:#00ffcc;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00ffcc;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 100px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    color:#00ffcc;
+}
+
+.hero-text span{
+    color:white;
+}
+
+.hero-text p{
+    margin-top:20px;
+    opacity:0.8;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 35px;
+    border:none;
+    background:#00ffcc;
+    color:black;
+    font-weight:700;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+.hero img{
+    width:400px;
+    border-radius:20px;
+    box-shadow:0 0 30px #00ffcc;
+}
+
+.section{
+    padding:100px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    width:250px;
+    transition:0.3s;
+    backdrop-filter:blur(5px);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(0,255,204,0.1);
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#000;
+}
+</style>
+</head>
+
+
+
+<body>
+
+<nav>
+    <h2>LEXOR2K</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#streams">Streams</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>LEXOR2K<br><span>Mongolian Streamer</span></h1>
+        <p>FPS • Competitive • Live Entertainment</p>
+        <button class="btn">Watch Live</button>
+    </div>
+    <img src="https://via.placeholder.com/400x500" alt="Streamer Photo">
+</section>
+
+<section class="section" id="about">
+    <h2>About Me</h2>
+    <p style="margin-top:20px;opacity:0.7;">
+       Намайг Lexor2k гэдэг Монголын gaming streamer.
+        Competitive FPS тоглоом болон live content хийдэг.
+    </p>
+</section>
+
+<section class="section" id="streams">
+    <h2>Platforms</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>YouTube</h3>
+            <p>Subscribe for highlights</p>
+        </div>
+        <div class="card">
+            <h3>Kick</h3>
+            <p>Watch Live Streams</p>
+        </div>
+        <div class="card">
+            <h3>Facebook</h3>
+            <p>Community Updates</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Lexor2k | All Rights Reserved
+</footer>
+
+</body>
+</html>
