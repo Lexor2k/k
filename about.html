@@ -1,18 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About | Lexor2k</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,0.7);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    color:#00ffcc;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#00ffcc;
+}
+
+/* About Section */
+.about{
+    padding:180px 20px 100px 20px;
+    text-align:center;
+}
+
+.about h1{
+    font-size:50px;
+    color:#00ffcc;
+}
+
+.about p{
+    margin-top:30px;
+    font-size:20px;
+    opacity:0.8;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    line-height:1.6;
+}
+
+/* Card Style */
+.info-card{
+    margin-top:60px;
+    background:rgba(255,255,255,0.05);
+    padding:40px;
+    border-radius:20px;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    transition:0.3s;
+}
+
+.info-card:hover{
+    background:rgba(0,255,204,0.1);
+    transform:translateY(-10px);
+}
+
+/* Back Button */
+.back-home{
+    display:inline-block;
+    margin-top:40px;
+    padding:10px 25px;
+    background:#00ffcc;
+    color:black;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.back-home:hover{
+    transform:scale(1.1);
+}
+
+/* Mobile */
+@media(max-width:768px){
+    nav{
+        padding:20px;
+    }
+
+    .about h1{
+        font-size:36px;
+    }
+
+    .about p{
+        font-size:16px;
+    }
+}
+</style>
 </head>
-<body style="background:black;color:white;text-align:center;padding-top:150px;">
 
-<h1>About Lexor2k</h1>
-<p>Монголын competitive FPS streamer.</p>
+<body>
 
-<br><br>
-<a href="index.html">⬅ Back Home</a>
-  <section class="hero fade">
-<h1>About Lexor2k</h1>
-<p>Competitive FPS Streamer from Mongolia</p>
+<nav>
+    <h2>LEXOR2K</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="streams.html">Streams</a></li>
+    </ul>
+</nav>
+
+<section class="about">
+    <h1>About Lexor2k</h1>
+    <p>
+        Монголын competitive FPS streamer.  
+        High-skill gameplay, ranked grinding, and live entertainment.
+    </p>
+
+    <div class="info-card">
+        <h3>🎮 Main Games</h3>
+        <p>Valorant • CS2 • Competitive FPS</p>
+    </div>
+
+    <a href="index.html" class="back-home">⬅ Back Home</a>
 </section>
 
 </body>
